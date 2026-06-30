@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact MarketMind Solutions — reach out about job inquiries, partnerships, or general questions about our mobile clinic operations." />
+  <title>Contact | MarketMind Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">M</div>
+      <div>
+        <div class="nav-logo-name">MarketMind Solutions</div>
+        <div class="nav-logo-sub">Mobile Clinic Operations</div>
+      </div>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn-nav">Get Started</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="btn-nav">Get Started</a>
+  </div>
+
+  <main class="page-top">
+
+    <!-- ==========================================
+         SECTION 1 — HERO
+    =========================================== -->
+    <section class="section-dark grid-texture hero">
+      <div class="glow glow-tr"></div>
+      <div class="container">
+        <div class="eyebrow hero-eyebrow reveal">Contact Us</div>
+        <h1 class="hero-headline reveal">
+          Let's talk.<br>We'd love to<br><span class="text-teal">hear from you.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Whether you're interested in joining our team, have questions about our services, or want to learn more about what we do — reach out anytime. We respond within 1–2 business days.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2 — CONTACT OPTIONS
+    =========================================== -->
+    <section class="section-dark-alt section-pad">
+      <div class="container">
+        <div class="grid-2" style="max-width:860px; margin:0 auto; gap:2rem;">
+
+          <div class="contact-option-card reveal">
+            <div class="contact-option-icon">📧</div>
+            <div class="contact-option-title">Send Us an Email</div>
+            <div class="contact-option-desc">For job inquiries, partnership questions, or general information — email is the best way to reach us with details. We review every message personally.</div>
+            <a href="mailto:mmsolutions.mobile1@gmail.com" class="contact-option-email">mmsolutions.mobile1@gmail.com</a>
+            <div class="contact-option-note">We aim to respond within 1–2 business days.</div>
+          </div>
+
+          <div class="contact-option-card reveal">
+            <div class="contact-option-icon">💬</div>
+            <div class="contact-option-title">DM Us Directly</div>
+            <div class="contact-option-desc">Prefer a faster back-and-forth? Send us a direct message on social media for quicker answers to questions or to express interest in a role before applying formally.</div>
+            <!-- Instagram & TikTok: add here once accounts are live -->
+            <div style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:0.75rem;">
+              <a href="https://www.facebook.com/profile.php?id=61591374486582" class="contact-option-email" target="_blank" rel="noopener" style="font-size:0.95rem;">Facebook →</a>
+              <a href="https://www.linkedin.com/company/market-mind-solution" class="contact-option-email" target="_blank" rel="noopener" style="font-size:0.95rem;">LinkedIn →</a>
+              <a href="https://www.instagram.com/mmsolutions.mobile1" class="contact-option-email" target="_blank" rel="noopener" style="font-size:0.95rem;">Instagram →</a>
+              <a href="https://www.tiktok.com/@market.mind.solut" class="contact-option-email" target="_blank" rel="noopener" style="font-size:0.95rem;">TikTok →</a>
+            </div>
+            <div class="contact-option-note">We're active and responsive on social media.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3 — CONTACT FORM
+    =========================================== -->
+    <section class="section-light section-pad">
+      <div class="container">
+        <div class="text-center">
+          <div class="eyebrow reveal" style="justify-content:center;">Get In Touch</div>
+          <h2 class="section-title reveal">Or fill out the form below</h2>
+          <p class="section-intro reveal">We'll get back to you as quickly as we can.</p>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form
+            action="https://formspree.io/f/maqgdgrl"
+            method="POST"
+            id="contactForm"
+          >
+            <!-- Redirect after successful submission -->
+            <input type="hidden" name="_next" value="https://mmsolutionsmobile.com/contact.html?sent=true" />
+            <!-- Subject line for the email notification -->
+            <input type="hidden" name="_subject" value="New message from mmsolutionsmobile.com" />
+
+            <div class="form-row reveal">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+
+            <div class="form-row reveal">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-row reveal">
+              <label for="phone">Phone Number <span style="font-weight:400;color:#9ab3c4;">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+            </div>
+
+            <div class="form-row reveal">
+              <label for="reason">Reason for Contact</label>
+              <select id="reason" name="reason" required>
+                <option value="" disabled selected>Select a reason…</option>
+                <option value="Job Inquiry">Job Inquiry</option>
+                <option value="Partnership">Partnership</option>
+                <option value="General Question">General Question</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-row reveal">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about yourself, your experience, or your question…" required></textarea>
+            </div>
+
+            <div class="reveal">
+              <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+            </div>
+
+            <p class="form-privacy reveal">
+              Your information is kept private and will only be used to respond to your inquiry.
+            </p>
+          </form>
+
+          <!-- Success / error messages (shown by JS) -->
+          <div id="formSuccess" style="display:none; margin-top:1.5rem; padding:1.25rem 1.75rem; background:rgba(0,180,160,0.1); border:1px solid rgba(0,180,160,0.25); border-radius:var(--radius); text-align:center;">
+            <strong style="color:var(--teal); font-size:1.05rem;">Message sent! ✓</strong>
+            <p style="font-size:0.875rem; color:#5a6e82; margin-top:0.4rem;">Thanks for reaching out — we'll be in touch within 1–2 business days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4 — FAQ TEASER
+    =========================================== -->
+    <section class="section-dark section-pad-sm">
+      <div class="container text-center">
+        <div class="eyebrow reveal" style="justify-content:center;">Job Questions?</div>
+        <h2 class="section-title reveal" style="font-size:1.8rem;">Looking for job-related info?</h2>
+        <p class="section-intro reveal" style="margin-bottom:2rem;">
+          We've answered the most common questions about roles, experience requirements, and how to apply on our Careers page.
+        </p>
+        <a href="careers.html" class="btn btn-primary reveal">Visit Our Careers Page</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo-wrap">
+            <div class="footer-logo-icon">M</div>
+            <div>
+              <div style="font-size:0.9rem;font-weight:700;color:var(--text-light);">MarketMind Solutions</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;color:var(--text-slate);text-transform:uppercase;letter-spacing:0.09em;">Mobile Clinic Operations</div>
+            </div>
+          </a>
+          <p class="footer-tagline">Bringing compliant, professionally managed mobile healthcare to the communities that need it most.</p>
+          <a href="mailto:mmsolutions.mobile1@gmail.com" class="footer-email">mmsolutions.mobile1@gmail.com</a>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="services.html">Mobile Site Operations</a></li>
+            <li><a href="services.html">Specimen Collection</a></li>
+            <li><a href="services.html">Telehealth Integration</a></li>
+            <li><a href="services.html">Compliance &amp; Documentation</a></li>
+            <li><a href="services.html">Community Outreach</a></li>
+            <li><a href="services.html">Staff Training</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Get Involved</div>
+          <p class="footer-contact-blurb">Ready to join the team or learn more about what we do? We'd love to connect.</p>
+          <a href="mailto:mmsolutions.mobile1@gmail.com" class="footer-email" style="display:block;margin-bottom:1.25rem;">mmsolutions.mobile1@gmail.com</a>
+          <a href="careers.html" class="btn btn-primary" style="font-size:0.85rem;padding:0.6rem 1.25rem;">Join Our Team</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 MarketMind Solutions. All rights reserved.</span>
+        <span>Mobile Clinic Operations</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Show success message if redirected back after Formspree submission
+    if (window.location.search.includes('sent=true')) {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
